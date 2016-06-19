@@ -17,5 +17,6 @@
 
 /* subscribe message */
 .main .message.subscribe-message {
-
+  font-style: italic;
+  padding-bottom: 10px;
 }
