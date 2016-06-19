@@ -3,7 +3,6 @@ $(document).ready(function () {
         $alert = $('#subscribeAlert'),
         $alertTitle = $alert.find('.title'),
         $alertMessage = $alert.find('.sub-title'),
-        $cancelButton = $('#cancelButton'),
         url = 'http://withpulp.us7.list-manage.com/subscribe?u=d2dfcf7ddc2440565bdc763b9&id=9e64c712f7';
 
     // update alert
@@ -53,15 +52,5 @@ $(document).ready(function () {
         //} else {
         //
         //}
-    });
-
-    $cancelButton.click(function (event) {
-        event.preventDefault();
-
-        console.log('clicked cancel button');
-        updateAlert('You said no', 'We will let you die in peace.');
-
-        $form.hide();
-        $alert.show();
     });
 });
