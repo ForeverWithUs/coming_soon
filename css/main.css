@@ -24,3 +24,9 @@
   font-style: italic;
   padding-bottom: 10px;
 }
+
+/* footer text */
+.main .footer .text-caption {
+    margin: 0;
+    color: #fff;
+}
