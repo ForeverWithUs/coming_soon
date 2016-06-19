@@ -1,0 +1,167 @@
+/* buttons */
+
+.buttons {
+    display: block;
+    width: 100%;
+    margin: 15px auto;
+}
+
+.buttons .button {
+    margin-bottom: 5px;
+}
+
+/* buttons */
+
+.button {
+    display: inline-block;
+    cursor: pointer;
+    margin: 0;
+    padding: 15px 30px;
+    outline: 0;
+    border: 0;
+    -webkit-box-shadow: 0 2px 1px 0 #333;
+    -moz-box-shadow: 0 2px 1px 0 #333;
+    -ms-box-shadow: 0 2px 1px 0 #333;
+    -o-box-shadow: 0 2px 1px 0 #333;
+    box-shadow: 0 2px 1px 0 #333;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: all 250ms;
+    -moz-transition: all 250ms;
+    -ms-transition: all 250ms;
+    -o-transition: all 250ms;
+    transition: all 250ms;
+}
+
+.button:hover {
+    -webkit-box-shadow: 0 1px 0 0 #333;
+    -moz-box-shadow: 0 1px 0 0 #333;
+    -ms-box-shadow: 0 1px 0 0 #333;
+    -o-box-shadow: 0 1px 0 0 #333;
+    box-shadow: 0 1px 0 0 #333;
+    background-color: #777;
+}
+
+.button:focus,
+.button:active {
+    -webkit-box-shadow: 0 2px 2px 0 #333 inset;
+    -moz-box-shadow: 0 2px 2px 0 #333 inset;
+    -ms-box-shadow: 0 2px 2px 0 #333 inset;
+    -o-box-shadow: 0 2px 2px 0 #333 inset;
+    box-shadow: 0 2px 2px 0 #333 inset;
+    background-color: #555;
+}
+
+.button.primary {
+    -webkit-box-shadow: 0 2px 1px 0 #255071;
+    -moz-box-shadow: 0 2px 1px 0 #255071;
+    -ms-box-shadow: 0 2px 1px 0 #255071;
+    -o-box-shadow: 0 2px 1px 0 #255071;
+    box-shadow: 0 2px 1px 0 #255071;
+    background-color: #55b4ff;
+    color: #fff;
+}
+
+.button.primary:hover {
+    -webkit-box-shadow: 0 1px 0 0 #255071;
+    -moz-box-shadow: 0 1px 0 0 #255071;
+    -ms-box-shadow: 0 1px 0 0 #255071;
+    -o-box-shadow: 0 1px 0 0 #255071;
+    box-shadow: 0 1px 0 0 #255071;
+    background-color: #4493d2;
+    color: #fff;
+}
+
+.button.primary:focus,
+.button.primary:active {
+    -webkit-box-shadow: 0 2px 2px 0 #255071 inset;
+    -moz-box-shadow: 0 2px 2px 0 #255071 inset;
+    -ms-box-shadow: 0 2px 2px 0 #255071 inset;
+    -o-box-shadow: 0 2px 2px 0 #255071 inset;
+    box-shadow: 0 2px 2px 0 #255071 inset;
+    background-color: #55b4ff;
+    color: #fff;
+}
+
+.button.neutral {
+    -webkit-box-shadow: 0 2px 1px 0 #777;
+    -moz-box-shadow: 0 2px 1px 0 #777;
+    -ms-box-shadow: 0 2px 1px 0 #777;
+    -o-box-shadow: 0 2px 1px 0 #777;
+    box-shadow: 0 2px 1px 0 #777;
+    background-color: #dcdcdc;
+    color: #555;
+}
+
+.button.neutral:hover {
+    -webkit-box-shadow: 0 1px 0 0 #777;
+    -moz-box-shadow: 0 1px 0 0 #777;
+    -ms-box-shadow: 0 1px 0 0 #777;
+    -o-box-shadow: 0 1px 0 0 #777;
+    box-shadow: 0 1px 0 0 #777;
+    background-color: #c7c7c7;
+    color: #555;
+}
+
+.button.neutral:focus,
+.button.neutral:active {
+    -webkit-box-shadow: 0 2px 2px 0 #777 inset;
+    -moz-box-shadow: 0 2px 2px 0 #777 inset;
+    -ms-box-shadow: 0 2px 2px 0 #777 inset;
+    -o-box-shadow: 0 2px 2px 0 #777 inset;
+    box-shadow: 0 2px 2px 0 #777 inset;
+    background-color: #dcdcdc;
+    color: #555;
+}
+
+/* forms */
+
+.form {
+    display: block;
+    width: 100%;
+    margin: 15px auto;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px 30px;
+    border: 1px solid #dcdcdc;
+    outline: 0;
+    line-height: 1;
+}
+
+/* container */
+
+.container {
+    display: block;
+    position: relative;
+    padding: 15px;
+}
+
+@media (min-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 25px;
+    }
+}
+
+@media (min-width: 960px) {
+    .container {
+        padding: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        padding: 35px;
+    }
+}

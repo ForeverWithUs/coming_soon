@@ -1,0 +1,21 @@
+/* custom css for main page */
+
+/* subscribe cta */
+.main .cta.subscribe-cta {
+
+}
+
+/* subscribe form */
+.main .form.subscribe-form {
+
+}
+
+/* subscribe alert */
+.main .alert.subscribe-alert {
+    display: none;
+}
+
+/* subscribe message */
+.main .message.subscribe-message {
+
+}

@@ -1,0 +1,54 @@
+/* text helpers */
+
+.text-primary {
+    color: #55b4ff !important;
+}
+
+/* background helpers */
+
+.background-primary {
+    background-color: #555;
+    color: #55b4ff;
+}
+
+/* grid helpers */
+
+.contain-center {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+@media (min-width: 480px) {
+    .contain-center {
+        width: 85%;
+    }
+}
+
+@media (min-width: 768px) {
+    .contain-center {
+        width: 80%
+    }
+}
+
+@media (min-width: 960px) {
+    .contain-center {
+        width: 75%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contain-center {
+        width: 70%;
+    }
+}
+
+/* wildcard */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
