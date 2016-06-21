@@ -1,9 +1,10 @@
 $(document).ready(function () {
     var $form = $('#subscribeForm'),
         $alert = $('#subscribeAlert'),
+        $input = $form.find('.input.email'),
         $alertTitle = $alert.find('.title'),
         $alertMessage = $alert.find('.sub-title'),
-        url = 'http://withpulp.us7.list-manage.com/subscribe?u=d2dfcf7ddc2440565bdc763b9&id=9e64c712f7';
+        url = 'https://withpulp.us7.list-manage.com/subscribe?u=d2dfcf7ddc2440565bdc763b9&id=9e64c712f7';
 
     // update alert
     function updateAlert(title, message) {
@@ -17,6 +18,9 @@ $(document).ready(function () {
         if (response.result === 'success') {
             console.log('mailchimp received the subscription', response);
 
+            // update alert details
+            updateAlert('We got your info!', 'We will contact you with more details soon.');
+
             // hide form and show alert message
             $form.hide();
             $alert.show();
@@ -24,7 +28,7 @@ $(document).ready(function () {
             console.error('something went wrong', response);
 
             // update alert details
-            updateAlert('Something Failed', 'Try submitting the form again');
+            updateAlert('Something Failed', 'Try submitting the form again.');
 
             // show form and alert
             $form.show();
@@ -45,12 +49,16 @@ $(document).ready(function () {
     $form.submit(function (event) {
         event.preventDefault();
 
-        // @TODO: validate form
-        console.log('form submitted');
-        //if () {
-        //
-        //} else {
-        //
-        //}
+        // @TODO: validate email input with regex
+        // need to prevent the submit to mailchimp
+        if ($input.val() === '') {
+            console.error('Missing email input');
+
+            updateAlert('Incorrect Email!', 'We need a valid email address.');
+            $alert.show();
+        } else {
+            // submit form after validation passes
+            console.log('Form submitted');
+        }
     });
 });
